@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TAHALUF | ASSIGNMENT</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="layout/images/favicon.png">
+    <!-- fonts -->
+    <link rel="stylesheet" href="layout/fonts/stylesheet.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- leaflet -->
+    <link rel="stylesheet" href="layout/css/leaflet.css" />
+    <!-- page style -->
+    <link rel="stylesheet" href="layout/css/style.css" />
+  </head>
+  <body>
+    
+    <!-- #header -->
+    <header class="header bg-white relative">
+      <div class="container">
+        <!-- #box -->
+        <div class="box d-flex space-between align-center">
+          <!-- #logo -->
+          <a href="#" class="d-flex logo">
+            <img src="layout/images/logo.png" width="55" />
+          </a>
+          <!-- ##logo -->
+
+          <!-- #right side -->
+          <div class="right d-flex gap-10">
+            <!-- #search -->
+            <div class="header-search d-flex relative">
+              <input placeholder="Search" type="text" class="input-search radius-20 bg-soft w-100 h-100 border-0 font-20" />
+              <button class="header-search-btn pointer h-100"><i class="fa-solid fa-magnifying-glass blue"></i></button>
+            </div>
+            <!-- ##search -->
+
+            <!-- #lang -->
+            <div class="header-lang header-dropdown" menu-root>
+              <div class="icon-fig pointer" open-menu="lang-menu">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="target lang-dropdown" menu-name="lang-menu">
+                <ul>
+                  <li>
+                    <a class="d-flex align-center  bold text-hover" href="#">
+                      <img class="" src="layout/images/en-flag.jpeg" width="20" /> 
+                      <span class="flex-1 center">English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-center bold text-hover" href="#">
+                      <img class="" src="layout/images/ar-flag.png" width="20" /> 
+                      <span class="flex-1 center ar-lang">عربي</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ##lang -->
+
+            <!-- #notifications -->
+            <div class="header-notifications header-dropdown" menu-root>
+              <div class="icon-fig pointer" open-menu="motifications-menu">
+                <i class="fa-solid fa-bell"></i>
+                <span class="notifications-dot"></span>
+              </div>
+
+              <div class="target notifications-dropdown" menu-name="motifications-menu">
+                <ul>
+                  <!-- #item -->
+                  <li class="notification-item d-flex space-between py-15 relative active">
+                    <!-- #left side -->
+                    <div class="notification-left d-flex gap-10">
+                      <figure class="icon-fig">
+                        <i class="fa-solid fa-bell"></i>
+                      </figure>
+                      <div class="notification-info w-70 d-flex flex-column gap-5">
+                        <p class="title bold font-18">GIS Data Request</p>
+                        <p class="desc gray font-13 two-line">Ahmad Khalil is Waiting for approval to Add New GIS Data</p>
+                      </div>
+                    </div>
+                    <!-- ##left side -->
+
+                    <!-- #right side -->
+                    <div class="notification-right d-flex flex-column space-between">
+                      <span class="notification-time font-10 gray-3 d-flex justify-end">12:08 PM</span>
+                      <a class="notification-btn font-15 d-flex align-center gap-5 blue font-14" href="#"><span class="underline">Show</span> <i class="fa-solid fa-chevron-right font-10"></i></a>
+                    </div>
+                    <!-- ##right side -->
+                  </li>
+                  <!-- ##item -->
+                  <!-- #item -->
+                  <li class="notification-item d-flex space-between py-15 relative">
+                    <!-- #left side -->
+                    <div class="notification-left d-flex gap-10">
+                      <figure class="icon-fig">
+                        <i class="fa-solid fa-bell"></i>
+                      </figure>
+                      <div class="notification-info w-70 d-flex flex-column gap-5">
+                        <p class="title bold font-18">GIS Data Request</p>
+                        <p class="desc gray font-13 two-line">Ahmad Khalil is Waiting for approval to Add New GIS Data</p>
+                      </div>
+                    </div>
+                    <!-- ##left side -->
+
+                    <!-- #right side -->
+                    <div class="notification-right d-flex flex-column space-between">
+                      <span class="notification-time font-10 gray-3 d-flex justify-end">12:08 PM</span>
+                      <a class="notification-btn font-15 d-flex align-center gap-5 blue font-14" href="#"><span class="underline">Show</span> <i class="fa-solid fa-chevron-right font-10"></i></a>
+                    </div>
+                    <!-- ##right side -->
+                  </li>
+                  <!-- ##item -->
+                  <!-- #item -->
+                  <li class="notification-item d-flex space-between py-15 relative">
+                    <!-- #left side -->
+                    <div class="notification-left d-flex gap-10">
+                      <figure class="icon-fig">
+                        <i class="fa-solid fa-bell"></i>
+                      </figure>
+                      <div class="notification-info w-70 d-flex flex-column gap-5">
+                        <p class="title bold font-18">GIS Data Request</p>
+                        <p class="desc gray font-13 two-line">Ahmad Khalil is Waiting for approval to Add New GIS Data</p>
+                      </div>
+                    </div>
+                    <!-- ##left side -->
+
+                    <!-- #right side -->
+                    <div class="notification-right d-flex flex-column space-between">
+                      <span class="notification-time font-10 gray-3 d-flex justify-end">12:08 PM</span>
+                      <a class="notification-btn font-15 d-flex align-center gap-5 blue font-14" href="#"><span class="underline">Show</span> <i class="fa-solid fa-chevron-right font-10"></i></a>
+                    </div>
+                    <!-- ##right side -->
+                  </li>
+                  <!-- ##item -->
+                </ul>
+                <div class="d-flex justify-center notification-bottom">
+                  <a class="font-14 blue d-block center pt-10 pb-15 w-100" href="#">See All</a>
+                </div>
+              </div>
+            </div>
+            <!-- ##notifications -->
+
+            <!-- #account -->
+            <div class="header-account">
+              <div class="header-dropdown" menu-root>
+                <!-- #top -->
+                <div open-menu="account-menu" class="account-header-top z-1 pointer d-flex align-center gap-15 radius-20 trans">
+                  <div class="d-flex overflow-hidden avatar-img">
+                    <img class="object-fit avatar-head-fig trans radius-20" src="layout/images/avatar.webp" width="57" height="57" />
+                  </div>
+  
+                  <!-- #info -->
+                  <div class="header-account-info flex-1">
+                    <div class="d-flex align-center space-between">
+                      <p class="bold font-18 one-line name">John Doe</p>
+                      <i class="fa-solid fa-chevron-down arrow-down font-13 trans"></i>
+                    </div>
+                    <p class="font-14 one-line role gray-3">Admin</p>
+                  </div>
+                  <!-- ##info -->
+                </div>
+                <!-- ##top -->
+                
+                <div menu-name="account-name" class="target account-dropdown">
+                  <div class="wrapper">
+                    <ul>
+                      <li><a class="font-13 link-hover" href="#"><span><i class="fa-regular fa-user"></i>My Account</span></a></li>
+                      <li><a class="font-13 link-hover" href="#"><span><i class="fa-solid fa-gear"></i>Settings</span></a></li>
+                      <li><a class="font-13 link-hover" href="#"><span><i class="fa-solid fa-power-off"></i>Logout</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- ##account -->
+
+          </div>
+          <!-- ##right side -->
+
+
+        </div>
+        <!-- ##box -->
+      </div>
+    </header>
+    <!-- ##header -->
+
+
+    <!-- #layout -->
+    <main class="main-layout d-flex relative">
+
+      <!-- #left nav -->
+      <nav class="left-side-nav bg-white pt-50 relative">
+        <!-- #links -->
+        <ul class="list-none">
+          <!-- #item -->
+          <li class="active">
+            <a href="#" class="d-flex align-center space-between trans">
+              <span class="d-flex align-center gap-20"><img src="layout/images/home-icon.svg" width="19" />Home</span>
+            </a>
+          </li>
+          <!-- ##item -->
+          
+          <!-- #item -->
+          <li>
+            <a href="#" class="d-flex align-center space-between trans">
+              <span class="d-flex align-center gap-20"><img src="layout/images/transaction-icon.svg" width="19" />Operation</span>
+            </a>
+          </li>
+          <!-- ##item -->
+          
+          <!-- #item -->
+          <li>
+            <a href="#" class="d-flex align-center space-between trans">
+              <span class="d-flex align-center gap-20"><img src="layout/images/map-icon.svg" width="19" />Map</span>
+            </a>
+          </li>
+          <!-- ##item -->
+          
+          <!-- #item -->
+          <li>
+            <a href="#" class="d-flex align-center space-between trans">
+              <span class="d-flex align-center gap-20"><img src="layout/images/report-icon.svg" width="19" />Report</span>
+            </a>
+          </li>
+          <!-- ##item -->
+          
+          <!-- #item -->
+          <li>
+            <a href="#" class="d-flex align-center space-between trans">
+              <span class="d-flex align-center gap-20"><img src="layout/images/panel-icon.svg" width="19" />Control Panel</span>
+            </a>
+          </li>
+          <!-- ##item -->
+        </ul>
+        <!-- ##links -->
+
+        <!-- #help -->
+        <div class="help-container">
+          <div class="help-box center white radius-20">
+            <figure class="relative d-flex justify-center mb-15">
+              <img src="layout/images/help-img.png" width="70" />
+            </figure>
+            <p class="help-title bold white mb-10">Need Help?</p>
+            <p class="help-desc bold font-12 mb-20">Click here to find<br /> Functionalities, Help, and More!</p>
+            <div class="d-flex justify-center">
+              <button class="help-btn bold font-15 shadow radius-15 white">Discover</button>
+            </div>
+          </div>
+        </div>
+        <!-- ##help -->
+
+      </nav>
+      <!-- ##left nav -->
+
+
+      <!-- #page wrapper -->
+      <div class="page-wrapper relative pt-30 flex-1 d-flex flex-column">
+        <h1 class="font-20 normal mb-20">Welcome! John Doe</h1>
+
+        <!-- #left - right -->
+        <div class="d-flex gap-20">
+          <!-- #left side -->
+          <section class="vpark-section page-left-side radius-20 shadow flex-1 bg-white">
+            <!-- #head -->
+            <div class="head d-flex space-between align-center mb-20">
+              <h2 class="bold font-20">VPark Fleet</h2>
+              <div class="section-head-options d-flex align-center gap-5">
+                <button>
+                  <img src="layout/images/grid-icon.svg" width="28" />
+                </button>
+                <button>
+                  <img src="layout/images/list-icon.svg" width="28" />
+                </button>
+              </div>
+            </div>
+            <!-- ##head -->
+
+            <!-- #box -->
+            <div class="box-container d-flex flex-column gap-15">
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-1">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-1">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-2">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center" status="warning">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-2">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                    
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-3">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center" status="high">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-3">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-1">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-1">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-2">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center" status="warning">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-2">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                    
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-3">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center" status="high">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-3">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-1">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-1">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-2">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center" status="warning">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-2">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                    
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-3">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center" status="high">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-3">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-4">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-4">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-5">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center" status="warning">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-5">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                    
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+              <!-- #item -->
+              <div class="item">
+                <div class="item-head pointer d-flex gap-20 align-center" toggle="prk-6">
+                  <!-- #top -->
+                  <figure class="relative d-flex">
+                    <img src="layout/images/car.svg" width="66" />
+                  </figure>
+                  <p class="relative title font-14 flex-1"><span class="relative dot-before d-flex align-center" status="high">Smart Vehicle 1</span></p>
+                  <!-- ##top -->
+                </div>
+
+                <!-- #info -->
+                <div class="item-info-box" data-toggle-tab="prk-6">
+
+                  <div class="inner-items-wrapper d-flex space-around">
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/camera-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Camera</p>
+                      <p class="font-14 bold mb-10 desc">Online</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/wifi-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Network</p>
+                      <p class="font-14 bold mb-10 desc">Available</p>
+                      <div class="colored-label" status="active">Active</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/memory-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">Memory</p>
+                      <p class="font-14 bold mb-10 desc">20%</p>
+                      <div class="colored-label" status="active">Normal</div>
+                    </div>
+                    <!-- ##inner item -->
+                    <!-- #inner item -->
+                    <div class="item-info d-flex align-center flex-column">
+                      <figure class="d-flex mb-10">
+                        <img src="layout/images/cpu-icon.svg" />
+                      </figure>
+                      <p class="name font-10 mb-3">CPU Temp</p>
+                      <p class="font-14 bold mb-10 desc">70&deg;</p>
+                      <div class="colored-label" status="high">High</div>
+                    </div>
+                    <!-- ##inner item -->
+                  </div>
+                </div>
+                <!-- ##info -->
+
+              </div>
+              <!-- ##item -->
+            </div>
+            <!-- ##box -->
+
+          </section>
+          <!-- ##left side -->
+  
+          <!-- #right side -->
+          <section class="page-right-side flex-1 d-flex flex-column gap-20">
+
+            <!-- #chart -->
+            <div class="vehicle-chart-box relative radius-20 shadow w-100 bg-white">
+              <div id="vehicle-chart"></div>
+              <p class="pie-title font-20 bold">Active Vehicles <br />Vs. In-Active<br /> Vehicles</p>
+              <div class="d-flex flex-column gap-10 vehicle-chart-legend">
+                <span>Active Vehicles</span>
+                <span class="soft">In-Active Vehicles</span>
+              </div>
+            </div>
+            <!-- ##chart -->
+
+            <!-- #cards -->
+            <div class="right-side-cards-box grid-2">
+              <!-- #card -->
+              <div class="d-flex align-center flex-column justify-center card-item bg-white shadow radius-20">
+                <figure class="d-flex mb-10">
+                  <img src="layout/images/card-1-icon.png" width="55" />
+                </figure>
+                <p class="d-flex black bold font-20 title mb-3">2,108</p>
+                <p class="d-flex gray-2 desc center">Total Violations</p>
+              </div>
+              <!-- ##card -->
+              <!-- #card -->
+              <div class="d-flex align-center flex-column justify-center card-item bg-white shadow radius-20">
+                <figure class="d-flex mb-10">
+                  <img src="layout/images/card-2-icon.png" width="55" />
+                </figure>
+                <p class="d-flex black bold font-20 title mb-3">100,000</p>
+                <p class="d-flex gray-2 desc center">Total Dectations</p>
+              </div>
+              <!-- ##card -->
+              <!-- #card -->
+              <div class="d-flex align-center flex-column justify-center card-item bg-white shadow radius-20">
+                <figure class="d-flex mb-10">
+                  <img src="layout/images/card-3-icon.png" width="55" />
+                </figure>
+                <p class="d-flex black bold font-20 title mb-3">48</p>
+                <p class="d-flex gray-2 desc center">Total Active Vehicles</p>
+              </div>
+              <!-- ##card -->
+              <!-- #card -->
+              <div class="d-flex align-center flex-column justify-center card-item bg-white shadow radius-20">
+                <figure class="d-flex mb-10">
+                  <img src="layout/images/card-4-icon.png" width="55" />
+                </figure>
+                <p class="d-flex black bold font-20 title mb-3">50,000</p>
+                <p class="d-flex gray-2 desc center">Total Distance in KM</p>
+              </div>
+              <!-- ##card -->
+            </div>
+            <!-- ##cards -->
+
+          </section>
+          <!-- ##right side -->
+        </div>
+        <!-- ##left - right -->
+
+        <!-- #banner -->
+        <div class="banner-section bg-cover relative radius-20">
+          <div class="box d-flex space-between">
+            <!-- #left -->
+            <div class="left">
+              <p class="title white">Get a bird’s eye <span class="yellow">view</span> in a snap.</p>
+              <p class="desc">We equip you with the tools to customise your dashboards and track fleet status,<br /> decorations, and violations at a glance.</p>
+            </div>
+            <!-- ##left -->
+            <!-- #right -->
+            <div class="right relative d-flex">
+              <img src="layout/images/gear-img.png" class="w-100" />
+            </div>
+            <!-- ##right -->
+          </div>
+        </div>
+        <!-- ##banner -->
+
+        <!-- #trip -->
+        <div class="trip-section radius-20 bg-white shadow">
+          <p class="font-20 bold mb-30 trip-title">Trip Route</p>
+          <div class="trip-box relative">
+            <div id="map" class="radius-20"></div>
+
+            <!-- #floating box -->
+            <div class="trip-options bg-white shadow radius-20">
+              <p class="gray-2 mb-10 title bold d-flex align-center gap-5">Trip Route <i class="fa-solid fa-info info-icon"></i></p>
+              <p class="gray-3 desc font-14 trip-border">Draw Trip Route by Adding Start point, Way points, and End point</p>
+
+              <!-- #form -->
+              <div class="new-trip-form">
+                <!-- #row -->
+                <div class="trip-row grid-2 trip-border">
+                  <!-- #form group -->
+                  <div class="form-group d-flex flex-column gap-10">
+                    <label class="gray-2">Trip name</label>
+                    <input class="trip-input bg-soft radius-15" type="text" placeholder="Trip 2" />
+                  </div>
+                  <!-- ##form group -->
+                  <!-- #form group -->
+                  <div class="form-group d-flex flex-column gap-10">
+                    <label class="gray-2">Sector</label>
+                    <select class="trip-input bg-soft radius-15 custom-select">
+                      <option>Marina</option>
+                    </select>
+                  </div>
+                  <!-- ##form group -->
+                </div>
+                <!-- ##row -->
+
+                <!-- #row -->
+                <div class="trip-row generate-row trip-border d-flex space-between">
+                  <p class="gray-2 d-flex align-center gap-5">Auto Generate<i class="fa-solid fa-info info-icon"></i></p>
+                  <button class="auto-generate-btn"><img src="layout/images/generate-icon.svg" /></button>
+                </div>
+                <!-- ##row -->
+
+
+                <!-- #row -->
+                <div class="trip-row add-btns-row trip-border d-flex space-between gap-10">
+                  <!-- #item -->
+                  <div class="trip-add-item center radius-10 bg-soft flex-1">
+                    <span class="mb-15 d-block">Add <br />Start Point</span>
+                    <button class="trip-add-item-btn radius-10 w-100 pointer" status="active"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                  <!-- ##item -->
+                  <!-- #item -->
+                  <div class="trip-add-item center radius-10 bg-soft flex-1">
+                    <span class="mb-15 d-block gray-2">Add<br /> Way Point</span>
+                    <button class="trip-add-item-btn radius-10 w-100 pointer" status="warning"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                  <!-- ##item -->
+                  <!-- #item -->
+                  <div class="trip-add-item center radius-10 bg-soft flex-1">
+                    <span class="mb-15 d-block">Add <br />Stop Point</span>
+                    <button class="trip-add-item-btn radius-10 w-100 pointer" status="high"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                  <!-- ##item -->
+                </div>
+                <!-- ##row -->
+
+                <!-- #row -->
+                <div class="trip-row trip-footer-btns-row d-flex space-between gap-15">
+                  <button class="trip-footer-btn flex-1 radius-15 bold">Cancel</button>
+                  <button class="trip-footer-btn flex-1 --fill radius-15 bold">Save</button>
+                </div>
+                <!-- ##row -->
+
+              </div>
+              <!-- ##form -->
+
+
+
+            </div>
+            <!-- ##floating box -->
+
+          </div>
+        </div>
+        <!-- ##trip -->
+
+
+
+      </div>
+      <!-- ##page wrapper -->
+
+    </main>
+    <!-- ##layout -->
+
+    
+    
+
+    <!-- jquery -->
+    <script src="layout/js/jquery.js"></script>
+    <!-- leaflet -->
+    <script src="layout/js/leaflet.js"></script>
+    <!-- anychart js -->
+    <script src="layout/js/anychart-base.min.js"></script>
+    <!-- page scripts -->
+    <script src="layout/js/jscript.js"></script>
+  </body>
+</html>
